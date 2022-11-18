@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment42</title>
+</head>
+<body>
+    <script>
+    function isValidDate(date) {
+        var temp = date.split('/');
+        var d = new Date(temp[2] + '/' + temp[0] + '/' + temp[1]);
+        return (d && (d.getMonth() + 1) == temp[0] && d.getDate() == Number(temp[1]) && d.getFullYear() == Number(temp[2]));
+    }
+    console.log(isValidDate('02/28/2015'));
+    </script>
+</body>
+</html>
