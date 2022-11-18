@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const arr1 = [1, 2, 3]
+const arr2 = [...arr1, 4, 5]
+console.log(arr1);              // [1, 2, 3]
+console.log(arr2);              // [1, 2, 3, 4, 5]
+arr1.push(6, 7);
+console.log(arr1);              // [1, 2, 3, 6, 7]
+console.log(arr2);              // [1, 2, 3, 4, 5]
+
+//Rest operator 
+const filter = (...args) => {
+  return args.filter(val => val%5===0)
+}
+
+console.log(filter(5, 10, 2, 4, 20));    // [5, 10, 20]
+
+//destrucring
+// Array
+const num = [11, 22, 33];
+[x, y] = num;
+console.log(x);                             // 11
+console.log(y);                              // 22
+[x, , y] = num;
+console.log(x);                             // 11
+console.log(y);
+</script>
+<body>
+  <h1>OUT PUT IS VISIBLE IN CONSOLE</h1> 
+</body>
+</html>
